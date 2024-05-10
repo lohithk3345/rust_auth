@@ -1,0 +1,26 @@
+[package]
+name = "user_auth"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.4"
+axum-auth = "0.7.0"
+bcrypt = "0.15.0"
+chrono = "0.4.31"
+dotenv = "0.15.0"
+jsonwebtoken = "9.2.0"
+mongodb = "2.8.0"
+redis = { version = "0.24.0", features = ["tokio-comp"] }
+serde = "1.0.195"
+serde_json = "1.0.111"
+tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
+tower = "0.4.13"
+tower-http = "0.5.1"
+uuid = "1.7.0"
+
+# [profile.release]
+# lto = true
+# opt-level = "z"
